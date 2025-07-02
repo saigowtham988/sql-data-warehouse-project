@@ -3,19 +3,21 @@
  Script Name : create_bronze_stage_tables.sql
 -------------------------------------------------------------------------------------
  Script Purpose :
- This script creates raw staging tables under the 'bronze' schema for CRM and ERP 
- source systems. These tables serve as initial landing zones for untransformed data 
- in the data warehouse ETL pipeline.
+ This script creates staging tables under the 'bronze' schema for ingesting raw data 
+ from CRM and ERP source systems. It performs the following actions:
 
- Tables created:
- - bronze.crm_cust_info
- - bronze.crm_prd_info
- - bronze.crm_sales_details
- - bronze.erp_cust_az12
- - bronze.erp_loc_a101
- - bronze.erp_px_cat_g1v2
+ 1. Drops each bronze table if it already exists
+ 2. Creates empty versions of the following tables:
+    - bronze.crm_cust_info
+    - bronze.crm_prd_info
+    - bronze.crm_sales_details
+    - bronze.erp_cust_az12
+    - bronze.erp_loc_a101
+    - bronze.erp_px_cat_g1v2
 
- Existing versions of the tables will be dropped if they already exist.
+ These tables are used as landing zones for raw CSV file loads in the initial phase 
+ of the data warehouse ETL pipeline.
+
 -------------------------------------------------------------------------------------
 */
 
