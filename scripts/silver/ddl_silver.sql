@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------------------------------------
- Script Name     : create_silver_stage_tables.sql
+ Script Name     : ddl_silver.sql
 -------------------------------------------------------------------------------------
  Script Purpose  :
  This script creates curated staging tables under the 'silver' schema for CRM and ERP 
