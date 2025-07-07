@@ -1,6 +1,6 @@
 /*
 -------------------------------------------------------------------------------------
- Script Name : create_bronze_stage_tables.sql
+ Script Name : ddl_bronze.sql
 -------------------------------------------------------------------------------------
  Script Purpose :
  This script creates staging tables under the 'bronze' schema for ingesting raw data 
